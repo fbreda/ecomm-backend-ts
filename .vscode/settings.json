@@ -1,0 +1,13 @@
+{
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "git.ignoreLimitWarning": true,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "typescript": "npx ts-node --files --transpile-only"
+    }
+}
