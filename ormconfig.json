@@ -1,0 +1,23 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5433,
+    "username": "ecommuser",
+    "password": 12345678,
+    "database": "db_ecomm",
+    "synchronize": false,
+    "logging": false,
+    "entities": [
+       "src/entity/*.ts"
+    ],
+    "migrations": [
+       "src/database/migrations/*.ts"
+    ],
+    "subscribers": [
+       "src/subscriber/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "src/entity",
+        "migrationsDir": "src/database/migrations"
+    }
+ }

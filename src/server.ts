@@ -1,5 +1,8 @@
+import "reflect-metadata"
 import express from "express"
 import { ApolloServer, gql } from "apollo-server-express"
+
+import "./database/connect"
 
 const typeDefs = gql`
   type Query {
@@ -23,5 +26,5 @@ app.use((req, res) => {
 })
 
 app.listen({ port: 4000 }, () =>
-  console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
+  console.log(`Server ready at http://localhost:4000${server.graphqlPath}`)
 )
